@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Início</a></li>
+            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="pesquisa.html">Pesquisar</a></li>
+            <li><a href="mensagens.html">Mensagens</a></li>
+            <li><a href="config.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="tema">
+            <p>Tema:</p>
+            <div class="config">
+                <p>Claro</p>
+                <div class="toggle">
+                    <input type="checkbox" id="check1">
+                    <label for="check1" class="button"></label>
+                </div>
+                <p>Escuro</p>
+            </div>
+        </div>
+
+
+        <div id="exibir">
+
+            <p>Exibir no perfil:</p>
+            <div class="config">
+                <p>Telefone</p>
+                <div class="toggle">
+                    <input type="checkbox" id="check2">
+                    <label for="check2" class="button"></label>
+                </div>
+                
+            </div>
+            <div class="config">
+                <p>E-mail</p>
+                <div class="toggle">
+                    <input type="checkbox" id="check3">
+                    <label for="check3" class="button"></label>
+                </div>
+                
+            </div>
+            <div class="config">
+                <p>Idade</p>
+                <div class="toggle">
+                    <input type="checkbox" id="check4">
+                    <label for="check4" class="button"></label>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="linguagem">
+            <p>Linguagem:</p>
+            <button>Português</button>
+        </div>
+
+    </main>
+
+    
+
+    <footer>
+        <p>© 2023 FORTES ENGENHARIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('check1');
+        const main = document.querySelector('main');
+
+        toggle.addEventListener('change', function() {
+          if (this.checked) {
+            document.body.classList.add('dark-mode');
+          } else {
+            document.body.classList.remove('dark-mode');
+          }
+        });
+    </script>
+
+</body>
+
+</html>

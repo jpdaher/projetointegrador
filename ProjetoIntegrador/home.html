@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Início</a></li>
+            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="pesquisa.html">Pesquisar</a></li>
+            <li><a href="mensagens.html">Mensagens</a></li>
+            <li><a href="config.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="feed">
+            <div class="post">
+                <img src="imagem_incio.webp" alt="" id="imgpost">
+                <div class="descricaopost">
+                    <div class="fotonome">
+                        <img src="fortes_logo.jpg" alt="foto de perfil" class="fotoperfil">
+                        <p>FortesEngenharia</p>
+                    </div>
+                    <div class="likecomentario">
+                        <img src="like_desativado.png" onclick="trocarLike()" alt="like" class="like"
+                            id="like">
+                        <img src="comentario.png" alt="comentario" class="comentario">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="post">
+                <img src="imagem_inicio2.jpg" alt="">
+                <div class="descricaopost">
+                    <div class="fotonome">
+                        <img src="fortes_logo.jpg" alt="foto de perfil" class="fotoperfil">
+                        <p>FortesEngenharia</p>
+                    </div>
+                    <div class="likecomentario">
+                        <img src="like_desativado.png" onclick="trocarLike2()" alt="like" class="like"
+                            id="like2">
+                        <img src="comentario.png" alt="comentario" class="comentario">
+                    </div>
+                </div>
+        </section>
+        </div>
+        </div>
+        </div>
+        <script src="home.js"></script>
+    </main>
+
+    <footer>
+        <p>© 2023 FORTES ENGENHARIA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
